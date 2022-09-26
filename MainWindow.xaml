@@ -5,12 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HolaMundo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Smash Window" Height="450" Width="800">
     <Grid>
-        <Button x:Name="saludarButton" Content="Saludar" HorizontalAlignment="Left" Margin="449,223,0,0" VerticalAlignment="Top" Width="75" Click="saludarButton_Click"/>
-        <TextBlock x:Name="nombreTextBlock" HorizontalAlignment="Left" Margin="252,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.306,0.875" FontSize="36" FontWeight="Bold" Width="417" Height="79"><Run Text="Hola mundo"/><Run Text="!"/></TextBlock>
+        <Button x:Name="saludarButton" HorizontalAlignment="Left" Margin="449,223,0,0" VerticalAlignment="Top" Width="75" Click="saludarButton_Click">Saludar</Button>
+        <TextBlock x:Name="nombreTextBlock" HorizontalAlignment="Left" Margin="252,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.306,0.875" FontSize="36" FontWeight="Bold" Width="417" Height="79">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFFF7171" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground><Run Text="Hola mundo"/><Run Text="!"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="252,199,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top" RenderTransformOrigin="0.345,2.193"/>
         <TextBox x:Name="nombreTextBox" HorizontalAlignment="Left" Height="23" Margin="252,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177"/>
+        <Image HorizontalAlignment="Left" Height="160" Margin="506,259,0,0" VerticalAlignment="Top" Width="286" Source="assets/syberpunk.png" Stretch="Fill" />
 
     </Grid>
 </Window>

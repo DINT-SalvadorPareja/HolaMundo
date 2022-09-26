@@ -14,7 +14,7 @@ namespace HolaMundo
 
         private void saludarButton_Click(object sender, RoutedEventArgs e)
         {
-            nombreTextBlock.Text = "Hola " + nombreTextBlock.Text;
+            nombreTextBlock.Text = $"Hola {nombreTextBox.Text} ";
             //prueba
         }
     }
